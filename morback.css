@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.morpion-square{
+    width: 250px;
+    height: 250px;
+    background-color: wheat;
+    border: black 3px solid;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+}
+.circle-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.circle{
+    position: absolute;
+    top: 0%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    border: 10px solid red;
+    border-radius: 100%;
+    transform: scale(.9);
+}
+.cross{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.cross-branch-1{
+    position: absolute;
+    width: 100%;
+    height: 9px;
+    background-color: blue;
+    top: 50%;
+    left:0%;
+    transform: rotate(45deg);
+}
+.cross-branch-2{
+    position: absolute;
+    width: 100%;
+    height: 9px;
+    background-color: blue;
+    top: 50%;
+    left:0%;
+    transform: rotate(-45deg);
+}
+/*VICTORY BAR MOFO*/
+.barre_cross1{
+    position: absolute;
+    top: 16.6%;
+    width: 90%;
+    height: 15px;
+    background-color: blue;
+    transform: translateX(5%);
+}
+.barre_cross2{
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    height: 15px;
+    background-color: blue;
+    transform: translateX(5%);
+}
+.barre_cross3{
+    position: absolute;
+    top: 83.3%;
+    width: 90%;
+    height: 15px;
+    background-color: blue;
+    transform: translateX(5%);
+}
+.barre_cross4{
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 15px;
+    background-color: blue;
+    left: 15.7%;
+}
+.barre_cross5{
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 15px;
+    background-color: blue;
+    left: 49%;
+}
+.barre_cross6{
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 15px;
+    background-color: blue;
+    left: 82.3%;
+}
+.barre_cross7{
+    position: absolute;
+    top: 49.5%;
+    height: 15px;
+    width: 110%;
+    background-color: blue;
+    left: -5%;
+    transform: rotate(45deg); 
+}
+.barre_cross8{
+    position: absolute;
+    top: 49.5%;
+    height: 15px;
+    width: 110%;
+    background-color: blue;
+    left: -5%;
+    transform: rotate(-45deg); 
+}
+.barre_circle1{
+    position: absolute;
+    top: 16.6%;
+    width: 90%;
+    height: 15px;
+    background-color: red;
+    transform: translateX(5%);
+}
+.barre_circle2{
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    height: 15px;
+    background-color: red;
+    transform: translateX(5%);
+}
+.barre_circle3{
+    position: absolute;
+    top: 83.3%;
+    width: 90%;
+    height: 15px;
+    background-color: red;
+    transform: translateX(5%);
+}
+.barre_circle4{
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 15px;
+    background-color: red;
+    left: 15.7%;
+}
+.barre_circle5{
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 15px;
+    background-color: red;
+    left: 49%;
+}
+.barre_circle6{
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 15px;
+    background-color: red;
+    left: 82.3%;
+}
+.barre_circle7{
+    position: absolute;
+    top: 49.5%;
+    height: 15px;
+    width: 110%;
+    background-color: red;
+    left: -5%;
+    transform: rotate(45deg); 
+}
+.barre_circle8{
+    position: absolute;
+    top: 49.5%;
+    height: 15px;
+    width: 110%;
+    background-color: red;
+    left: -5%;
+    transform: rotate(-45deg); 
+}
+/*ASIDE*/
+.game-info{
+    background-color: wheat;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
